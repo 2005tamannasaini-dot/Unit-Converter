@@ -9,7 +9,10 @@ show_menu()
 choice = input("Enter Your choice(1-3):").strip()
 
 if choice == "1":
-    print("Lenght Converter Selected")
+    print("======= Lenght Converter =======")
+    print("Kilometers to Meters")
+    print("Meters to Centimeters")
+    print("Centimeters to Miles")
 
 elif choice == "2":
     print("Temperature Converter Selected")
