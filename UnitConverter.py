@@ -16,10 +16,15 @@ if choice == "1":
 
     length_choice = input("Enter Your choice(1-3):")
 
-    if choice == "1":
+    if length_choice == "1":
         km = float(input("Enter KiloMeters:"))
         meters = km * 1000
         print("Meters:", meters)
+
+    elif length_choice == "2":
+        meters = float(input("Enter Meter:"))
+        centimeters = meters * 100 
+        print("CentiMeters:", centimeters)
 
 elif choice == "2":
     print("Temperature Converter Selected")
