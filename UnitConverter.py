@@ -26,6 +26,11 @@ if choice == "1":
         centimeters = meters * 100 
         print("CentiMeters:", centimeters)
 
+    elif length_choice == "3":
+        km = float(input("Enter KiloMeters:"))
+        miles = km * 0.621371
+        print("Miles:", miles)    
+
 elif choice == "2":
     print("Temperature Converter Selected")
 
