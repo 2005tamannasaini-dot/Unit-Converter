@@ -32,7 +32,9 @@ if choice == "1":
         print("Miles:", miles)    
 
 elif choice == "2":
-    print("Temperature Converter Selected")
+    print("======Temperature Converter=======")
+    print("1. Celsius to Fahrenheit")
+    print("2. Fahrenheit to Celsius")
 
 elif choice == "3":
     print("Unit Converter Closed")   
