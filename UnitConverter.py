@@ -36,6 +36,13 @@ elif choice == "2":
     print("1. Celsius to Fahrenheit")
     print("2. Fahrenheit to Celsius")
 
+    temp_choice = input("Enter Your Choice(1-2):")
+
+    if temp_choice == "1":
+        celsius = float(input("Temperature in Celsius:" ))
+        fahrenheit = (celsius * 9/5) + 32
+        print("Fahrenheit:", fahrenheit)
+
 elif choice == "3":
     print("Unit Converter Closed")   
 
