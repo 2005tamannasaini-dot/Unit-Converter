@@ -1,6 +1,23 @@
+## UNTI CONVERTER PROJECR
+
+def km_to_meters(km):
+    return km * 1000
+
+def meters_to_cm(meters):
+    return meters * 100
+
+def km_to_miles(km):
+    return km * 0.621371
+
+def celsius_to_fahrenheit(celsius):
+    return (celsius * 9/5) + 32
+
+def fahrenheit_to_celsius(fahrenheit):
+    return (fahrenheit - 32) * 5/9
+
 def show_menu():
     print("======== UNIT CONVERTER =========")
-    print("1. Lenght Converter")
+    print("1. Length Converter")
     print("2.  Temperature Converter")
     print("3. Exit")
 
@@ -12,23 +29,23 @@ if choice == "1":
     print("======= Length Converter =======")
     print("Kilometers to Meters")
     print("Meters to Centimeters")
-    print("Centimeters to Miles")
+    print("Kilometers to Miles")
 
     length_choice = input("Enter Your choice(1-3):")
 
     if length_choice == "1":
         km = float(input("Enter KiloMeters:"))
-        meters = km * 1000
+        meters = km_to_meters(km)
         print("Meters:", meters)
 
     elif length_choice == "2":
         meters = float(input("Enter Meter:"))
-        centimeters = meters * 100 
-        print("CentiMeters:", centimeters)
+        cm = meters_to_cm(meters)
+        print("CentiMeters:", cm)
 
     elif length_choice == "3":
         km = float(input("Enter KiloMeters:"))
-        miles = km * 0.621371
+        miles = km_to_miles(km)
         print("Miles:", miles)    
 
 elif choice == "2":
@@ -40,12 +57,12 @@ elif choice == "2":
 
     if temp_choice == "1":
         celsius = float(input("Temperature in Celsius:" ))
-        fahrenheit = (celsius * 9/5) + 32
+        fahrenheit = celsius_to_fahrenheit(celsius)
         print("Fahrenheit:", fahrenheit)
 
     elif temp_choice == "2":
         fahrenheit = float(input("Temperature in Fahrenheit:"))
-        celsius = (fahrenheit - 32) * 5/9
+        celsius = fahrenheit_to_celsius(fahrenheit)
         print("Celsius:", celsius)
 
 elif choice == "3":
@@ -53,4 +70,5 @@ elif choice == "3":
 
 else:
     print("Invalid Choice!")         
+
 
