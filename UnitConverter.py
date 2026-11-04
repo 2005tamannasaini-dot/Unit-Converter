@@ -38,19 +38,28 @@ if choice == "1":
 
     else:
         if length_choice == "1":
-            km = float(input("Enter KiloMeters:"))
-            meters = km_to_meters(km)
-            print("Meters:", meters)
+            try:
+                km = float(input("Enter KiloMeters:"))
+                meters = km_to_meters(km)
+                print("Meters:", meters)
+            except ValueError:
+                 print("Please enter a valid number!")
 
         elif length_choice == "2":
-            meters = float(input("Enter Meter:"))
-            cm = meters_to_cm(meters)
-            print("CentiMeters:", cm)
+            try:
+                meters = float(input("Enter Meter:"))
+                cm = meters_to_cm(meters)
+                print("CentiMeters:", cm)
+            except ValueError:
+                 print("Please enter a valid number!")
 
         elif length_choice == "3":
-            km = float(input("Enter KiloMeters:"))
-            miles = km_to_miles(km)
-            print("Miles:", miles)    
+            try:
+                km = float(input("Enter KiloMeters:"))
+                miles = km_to_miles(km)
+                print("Miles:", miles)    
+            except ValueError:
+                 print("Please enter a valid number!")    
 
 elif choice == "2":
     print("======Temperature Converter=======")
@@ -63,14 +72,20 @@ elif choice == "2":
             print("Invalid Temperature Choice!")
     
     elif temp_choice == "1":
-        celsius = float(input("Temperature in Celsius:" ))
-        fahrenheit = celsius_to_fahrenheit(celsius)
-        print("Fahrenheit:", fahrenheit)
+        try:
+            celsius = float(input("Temperature in Celsius:" ))
+            fahrenheit = celsius_to_fahrenheit(celsius)
+            print("Fahrenheit:", fahrenheit)
+        except ValueError:
+             print("Please enter a valid number!")
 
     elif temp_choice == "2":
-        fahrenheit = float(input("Temperature in Fahrenheit:"))
-        celsius = fahrenheit_to_celsius(fahrenheit)
-        print("Celsius:", celsius)
+        try:
+            fahrenheit = float(input("Temperature in Fahrenheit:"))
+            celsius = fahrenheit_to_celsius(fahrenheit)
+            print("Celsius:", celsius)
+        except ValueError:
+             print("Please enter a valid number!")    
 
 elif choice == "3":
     print("Unit Converter Closed")   
